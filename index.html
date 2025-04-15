@@ -5,10 +5,11 @@
   <title>Weiterleitung zu Fansly...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
-    // Zuerst deinen Ref-Link aufrufen (setzt Cookie)
-    window.location.href = "https://fansly.com/proyouraccount?r=germannsfw";
+    // Unsichtbar ein Bild mit Ref-Link laden (setzt Cookie!)
+    const img = new Image();
+    img.src = "https://fansly.com/proyouraccount?r=germannsfw";
 
-    // Dann automatisch zur Startseite von Fansly (Signup)
+    // Dann nach 1,5 Sekunden zur Fansly Homepage weiterleiten (Signup)
     setTimeout(() => {
       window.location.href = "https://fansly.com/";
     }, 1500);
